@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Байкалэлектро | Проектирование объектов энергетики</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="#home" class="logo">
+                <img src="icon.ico" alt="Байкалэлектро">
+                <div>
+                    <div class="logo-name gradient-text">Байкалэлектро</div>
+                    <div class="logo-sub">Проектирование энергетики</div>
+                </div>
+            </a>
+
+            <nav class="nav">
+                <a href="#home"     class="nav-link">Главная</a>
+                <a href="#services" class="nav-link">Услуги</a>
+                <a href="#portfolio" class="nav-link">Работы</a>
+                <a href="#projects" class="nav-link">Проекты</a>
+                <a href="#licenses" class="nav-link">Лицензии</a>
+                <a href="#contact-info" class="nav-link">Контакты</a>
+            </nav>
+
+            <button onclick="document.getElementById('contactForm').scrollIntoView({behavior:'smooth'})" class="btn-primary header-cta">
+                Обратиться
+            </button>
+
+            <button id="hamburger" class="hamburger" aria-label="Меню">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="6"  x2="20" y2="6"/>
+                    <line x1="4" y1="12" x2="20" y2="12"/>
+                    <line x1="4" y1="18" x2="20" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#home">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Работы</a>
+        <a href="#projects">Проекты</a>
+        <a href="#licenses">Лицензии</a>
+        <a href="#contact-info">Контакты</a>
+        <button onclick="document.getElementById('contactForm').scrollIntoView({behavior:'smooth'})" class="btn-primary">
+            Связаться
+        </button>
+    </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+    <div class="glow-blob glow-blob-1"></div>
+    <div class="glow-blob glow-blob-2"></div>
+
+    <div class="hero-inner">
+        <h1>
+            Проектирование<br>
+            <span class="gradient-text">объектов электроснабжения</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            Инженерно-изыскательская компания нового поколения. Полный спектр услуг по проектированию, геодезии и энергоаудиту объектов энергетической инфраструктуры с опытом работы по всей России более 20 лет.
+        </p>
+
+        <div class="hero-buttons">
+            <button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" class="btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                Смотреть услуги
+            </button>
+            <button onclick="document.getElementById('contactForm').querySelector('input').focus()" class="btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                Оставить заявку
+            </button>
+        </div>
+
+        <div class="hero-features">
+            <div class="hero-feature reveal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                Выполнение расчётов на всех стадиях проектирования
+            </div>
+            <div class="hero-feature reveal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Все лицензии и сертификаты
+            </div>
+            <div class="hero-feature reveal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                Быстрое выполнение проектов
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2>Наши <span class="gradient-text">услуги</span></h2>
+            <p>Полный спектр профессиональных услуг для надежного развития энергетической инфраструктуры</p>
+        </div>
+
+        <div class="services-intro-block reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <div>
+                <p class="services-intro-title gradient-text">ООО «Байкалэлектро» — ваш надёжный партнёр</p>
+                <p>Высококвалифицированные специалисты нашей компании качественно и в срок выполнят для Вас весь комплекс проектно-изыскательских работ. Все работы выполняются в соответствии с нормами и правилами РФ по отечественным и импортным технологиям.</p>
+            </div>
+        </div>
+
+        <div class="services-subheading reveal">
+            <h3>ООО «Байкалэлектро» выполняет следующие работы:</h3>
+            <div class="services-subheading-line"></div>
+        </div>
+
+        <div class="cards-grid-2">
+            <!-- Изыскания -->
+            <div class="card-service reveal">
+                <span class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                </span>
+                <h3>Инженерно-изыскательские работы</h3>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Инженерно-геодезические изыскания</p>
+                </div>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Инженерно-геологические изыскания</p>
+                </div>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Инженерно-гидрометеорологические изыскания</p>
+                </div>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Инженерно-экологические изыскания</p>
+                </div>
+            </div>
+
+            <!-- ПСД -->
+            <div class="card-service reveal">
+                <span class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><line x1="12" y1="11" x2="16" y2="11"/><line x1="12" y1="16" x2="16" y2="16"/><line x1="8" y1="11" x2="8.01" y2="11"/><line x1="8" y1="16" x2="8.01" y2="16"/></svg>
+                </span>
+                <h3>Проектно-сметная документация</h3>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Разработка ПСД наружных и внутренних сетей электроснабжения</p>
+                </div>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Разработка ПСД подстанций открытого и закрытого типа</p>
+                </div>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Согласование проекта в Ростехнадзоре, энергоснабжающей и других заинтересованных организациях</p>
+                </div>
+            </div>
+
+            <!-- Авторский надзор -->
+            <div class="card-service reveal" style="grid-column: 1 / -1">
+                <span class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                </span>
+                <h3>Авторский надзор за строительством</h3>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Контроль соответствия строительства утверждённой проектной документации</p>
+                </div>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Проверка качества применяемых материалов и оборудования</p>
+                </div>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Участие в комиссионной приёмке выполненных видов работ</p>
+                </div>
+                <div class="service-list-item">
+                    <div class="service-dot"></div>
+                    <p>Ведение журнала авторского надзора и подготовка замечаний проектировщика</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accent-grid-3">
+            <div class="accent-block reveal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                <h4>Лицензированная деятельность</h4>
+                <p>Деятельность нашей фирмы лицензирована, что подтверждено наличием допуска СРО.</p>
+            </div>
+            <div class="accent-block reveal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-1"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
+                <h4>Партнёрская сеть</h4>
+                <p>Мы тесно сотрудничаем со строительно-монтажными организациями для комплексного решения задач.</p>
+            </div>
+            <div class="accent-block reveal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                <h4>Любая сложность — в срок</h4>
+                <p>Высокий профессионализм и передовые технологии позволяют нам выполнять работы любой сложности в кратчайшие сроки и по конкурентоспособной цене.</p>
+            </div>
+        </div>
+
+        <div class="info-grid-2">
+            <div class="info-card reveal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+                <p class="italic">«Обращаясь в нашу компанию, Вы приобретаете опытного партнера, надежного подрядчика и субподрядчика. Мы дорожим прочными и долгосрочными партнерскими отношениями с нашими клиентами!»</p>
+            </div>
+            <div class="info-card reveal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <h4>Индивидуальный подход к стоимости</h4>
+                <p>Стоимость проектирования определяется в индивидуальном порядке при встрече с Заказчиком. Проектирование ведётся в сроки, чётко указанные в договоре.</p>
+                <button onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})" class="btn-primary btn-sm">
+                    Обсудить проект
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== PORTFOLIO ===== -->
+<section id="portfolio">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2>Примеры выполнения <span class="gradient-text">строительно-монтажных работ по нашим проектам</span></h2>
+            <p>Реализованные объекты капитального строительства по нашим проектам</p>
+        </div>
+
+        <div class="portfolio-swiper swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="0"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_20181213_140658.jpg" alt="Строительство подстанции"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Строительство подстанции</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="1"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_20181213_140737.jpg" alt="Монтаж опоры ВЛ"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Монтаж опоры ВЛ</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="2"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_2924.JPG" alt="Подстанция, вид при сдаче объекта"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Подстанция, вид при сдаче</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="3"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_3328.JPG" alt="Силовой трансформатор"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Силовой трансформатор</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="4"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_3364.JPG" alt="Панорама подстанции"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Панорама подстанции</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="5"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_3370.JPG" alt="Оборудование ОРУ"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Оборудование ОРУ</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="6"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_3402.JPG" alt="Ошиновка подстанции"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Ошиновка подстанции</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="7"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_3408.JPG" alt="Монтаж трансформатора"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Монтаж трансформатора</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="8"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_3432.JPG" alt="Монтаж портала ПС"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Монтаж портала ПС</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="9"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_5740.JPG" alt="Монтаж кабелей"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Монтаж кабелей</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="10"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_5758.JPG" alt="Подстанция, зимний период"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Подстанция, зимний период</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="11"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_5794.JPG" alt="Первичное оборудование"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Первичное оборудование</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="12"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_5823.JPG" alt="Силовой трансформатор, панорама"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Силовой трансформатор</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="13"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_5829.JPG" alt="Прокладка кабелей"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Прокладка кабелей</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="14"><div class="portfolio-img-wrap"><img src="фото%20сайт/IMG_5855.JPG" alt="Шкаф РЗА"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Шкаф РЗА</span></div></div></div>
+
+                <div class="swiper-slide"><div class="portfolio-card" data-portfolio-index="15"><div class="portfolio-img-wrap"><img src="фото%20сайт/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20WhatsApp%202025-01-13%20%D0%B2%2008.55.10_95c4c911.jpg" alt="Панорама ВЛ 110 кВ"><div class="portfolio-zoom"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="portfolio-caption"><span class="portfolio-date">Панорама ВЛ 110 кВ</span></div></div></div>
+
+            </div>
+
+            <div class="swiper-button-prev portfolio-btn-prev"></div>
+            <div class="swiper-button-next portfolio-btn-next"></div>
+            <div class="swiper-pagination portfolio-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2>Примеры <span class="gradient-text">проектных решений</span></h2>
+            <p>Фрагменты разработанной проектно-сметной документации и технических решений</p>
+        </div>
+
+        <div class="projects-swiper swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="portfolio-card" data-projects-index="0">
+                        <div class="portfolio-img-wrap">
+                            <img src="Примеры проектов/Снимок экрана 2026-07-03 195528.png" alt="Схема электроснабжения объекта" loading="lazy">
+                            <div class="portfolio-zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <span class="portfolio-date">Схема электроснабжения объекта</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-card" data-projects-index="1">
+                        <div class="portfolio-img-wrap">
+                            <img src="Примеры проектов/Снимок экрана 2026-07-03 195700.png" alt="Чертёж ВЛ 110 кВ" loading="lazy">
+                            <div class="portfolio-zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <span class="portfolio-date">Чертёж ВЛ 110 кВ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-card" data-projects-index="2">
+                        <div class="portfolio-img-wrap">
+                            <img src="Примеры проектов/Снимок экрана 2026-07-03 195743.png" alt="План подстанции 35/10 кВ" loading="lazy">
+                            <div class="portfolio-zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <span class="portfolio-date">План подстанции 35/10 кВ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-card" data-projects-index="3">
+                        <div class="portfolio-img-wrap">
+                            <img src="Примеры проектов/Снимок экрана 2026-07-03 195956.png" alt="Геодезический план трассы" loading="lazy">
+                            <div class="portfolio-zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <span class="portfolio-date">Геодезический план трассы</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-card" data-projects-index="4">
+                        <div class="portfolio-img-wrap">
+                            <img src="Примеры проектов/Снимок экрана 2026-07-03 200117.png" alt="Схема электрических сетей" loading="lazy">
+                            <div class="portfolio-zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <span class="portfolio-date">Схема электрических сетей</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-card" data-projects-index="5">
+                        <div class="portfolio-img-wrap">
+                            <img src="Примеры проектов/Снимок экрана 2026-07-03 200223.png" alt="Генеральный план сети" loading="lazy">
+                            <div class="portfolio-zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <span class="portfolio-date">Генеральный план сети</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-card" data-projects-index="6">
+                        <div class="portfolio-img-wrap">
+                            <img src="Дополнительно/Снимок экрана 2026-07-15 191458.png" alt="Схема учёта электроэнергии, шкаф ВУ 0,4 кВ" loading="lazy">
+                            <div class="portfolio-zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <span class="portfolio-date">Схема учёта электроэнергии, шкаф ВУ 0,4 кВ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-card" data-projects-index="7">
+                        <div class="portfolio-img-wrap">
+                            <img src="Дополнительно/Снимок экрана 2026-07-15 191551.png" alt="Подъём КЛ 6 кВ на опоре ВЛ" loading="lazy">
+                            <div class="portfolio-zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <span class="portfolio-date">Подъём КЛ 6 кВ на опоре ВЛ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-card" data-projects-index="8">
+                        <div class="portfolio-img-wrap">
+                            <img src="Дополнительно/Снимок экрана 2026-07-15 191616.png" alt="Общий вид анкерно-угловых опор ВЛ" loading="lazy">
+                            <div class="portfolio-zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <span class="portfolio-date">Общий вид анкерно-угловых опор ВЛ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-card" data-projects-index="9">
+                        <div class="portfolio-img-wrap">
+                            <img src="Дополнительно/Снимок экрана 2026-07-15 191715.png" alt="Шкаф вводного устройства ЩВУ" loading="lazy">
+                            <div class="portfolio-zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <span class="portfolio-date">Шкаф вводного устройства ЩВУ</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-prev projects-btn-prev"></div>
+            <div class="swiper-button-next projects-btn-next"></div>
+            <div class="swiper-pagination projects-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== LICENSES ===== -->
+<section id="licenses">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2>Лицензии и <span class="gradient-text">сертификаты</span></h2>
+            <p>Все необходимые лицензии и разрешения для выполнения работ в сфере энергетики</p>
+        </div>
+
+        <div class="licenses-grid">
+            <div class="license-card reveal" onclick="showLicenseModal('Лицензия / Допуск СРО', 'Лицензии/svidetel_stvo__2956.jpg')">
+                <img src="Лицензии/svidetel_stvo__2956.jpg" alt="Лицензия СРО">
+                <div class="license-caption">
+                    <div class="license-caption-title">Лицензия СРО</div>
+                    <div class="license-caption-hint">Нажмите для просмотра</div>
+                </div>
+            </div>
+            <div class="license-card reveal" onclick="showLicenseModal('Допуск на проектные работы', 'Лицензии/cpo_24112014.jpg')">
+                <img src="Лицензии/cpo_24112014.jpg" alt="Допуск на проектные работы">
+                <div class="license-caption">
+                    <div class="license-caption-title">Допуск на проектные работы</div>
+                    <div class="license-caption-hint">Нажмите для просмотра</div>
+                </div>
+            </div>
+            <div class="license-card reveal" onclick="showLicenseModal('Свидетельство о членстве в СРО', 'Лицензии/sertifikat_sro_map_3.jpg')">
+                <img src="Лицензии/sertifikat_sro_map_3.jpg" alt="Свидетельство СРО">
+                <div class="license-caption">
+                    <div class="license-caption-title">Свидетельство о членстве в СРО</div>
+                    <div class="license-caption-hint">Нажмите для просмотра</div>
+                </div>
+            </div>
+            <div class="license-card reveal" onclick="showLicenseModal('Разрешительная документация', 'Лицензии/cpo_2.jpg')">
+                <img src="Лицензии/cpo_2.jpg" alt="Разрешительная документация">
+                <div class="license-caption">
+                    <div class="license-caption-title">Разрешительная документация</div>
+                    <div class="license-caption-hint">Нажмите для просмотра</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Extra licenses -->
+        <div id="extraLicenses" class="extra-licenses-wrapper">
+            <div class="licenses-grid-extra">
+                <div class="license-card" onclick="showLicenseModal('Свидетельство №2956 (стр. 2)', 'Лицензии/svid_vo__2956_str_2.jpg')">
+                    <img src="Лицензии/svid_vo__2956_str_2.jpg" alt="Свидетельство стр. 2">
+                    <div class="license-caption">
+                        <div class="license-caption-title">Свидетельство №2956 (стр. 2)</div>
+                        <div class="license-caption-hint">Нажмите для просмотра</div>
+                    </div>
+                </div>
+                <div class="license-card" onclick="showLicenseModal('Свидетельство №2956 (стр. 3)', 'Лицензии/svid_vo_2956_str_3.jpg')">
+                    <img src="Лицензии/svid_vo_2956_str_3.jpg" alt="Свидетельство стр. 3">
+                    <div class="license-caption">
+                        <div class="license-caption-title">Свидетельство №2956 (стр. 3)</div>
+                        <div class="license-caption-hint">Нажмите для просмотра</div>
+                    </div>
+                </div>
+                <div class="license-card" onclick="showLicenseModal('Допуск СРО (стр. 3)', 'Лицензии/cpo_3.jpg')">
+                    <img src="Лицензии/cpo_3.jpg" alt="Допуск СРО стр. 3">
+                    <div class="license-caption">
+                        <div class="license-caption-title">Допуск СРО (стр. 3)</div>
+                        <div class="license-caption-hint">Нажмите для просмотра</div>
+                    </div>
+                </div>
+                <div class="license-card" onclick="showLicenseModal('Допуск СРО (стр. 4)', 'Лицензии/cpo_4.jpg')">
+                    <img src="Лицензии/cpo_4.jpg" alt="Допуск СРО стр. 4">
+                    <div class="license-caption">
+                        <div class="license-caption-title">Допуск СРО (стр. 4)</div>
+                        <div class="license-caption-hint">Нажмите для просмотра</div>
+                    </div>
+                </div>
+                <div class="license-card" onclick="showLicenseModal('Допуск СРО (стр. 5)', 'Лицензии/cpo_5.jpg')">
+                    <img src="Лицензии/cpo_5.jpg" alt="Допуск СРО стр. 5">
+                    <div class="license-caption">
+                        <div class="license-caption-title">Допуск СРО (стр. 5)</div>
+                        <div class="license-caption-hint">Нажмите для просмотра</div>
+                    </div>
+                </div>
+                <div class="license-card" onclick="showLicenseModal('Сертификат энергоаудита', 'Лицензии/ehnergoaudit.jpg')">
+                    <img src="Лицензии/ehnergoaudit.jpg" alt="Энергоаудит">
+                    <div class="license-caption">
+                        <div class="license-caption-title">Сертификат энергоаудита</div>
+                        <div class="license-caption-hint">Нажмите для просмотра</div>
+                    </div>
+                </div>
+                <div class="license-card" onclick="showLicenseModal('ISO Сертификат', 'Лицензии/iso.jpg')">
+                    <img src="Лицензии/iso.jpg" alt="ISO Сертификат">
+                    <div class="license-caption">
+                        <div class="license-caption-title">ISO Сертификат</div>
+                        <div class="license-caption-hint">Нажмите для просмотра</div>
+                    </div>
+                </div>
+                <div class="license-card" onclick="showLicenseModal('Привлекательный работодатель', 'Лицензии/privlekatel_nyjj_rabotodatel_.jpg')">
+                    <img src="Лицензии/privlekatel_nyjj_rabotodatel_.jpg" alt="Привлекательный работодатель">
+                    <div class="license-caption">
+                        <div class="license-caption-title">Привлекательный работодатель</div>
+                        <div class="license-caption-hint">Нажмите для просмотра</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="show-more-wrap">
+            <button onclick="toggleExtraLicenses()" class="btn-secondary" style="gap: 12px;">
+                <span id="showMoreText">Смотреть другие</span>
+                <svg id="showMoreArrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.4s ease; flex-shrink:0;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== CONTACTS ===== -->
+<section id="contacts">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2>Обратитесь к <span class="gradient-text">нам    </span></h2>
+            <p>Готовы помочь с вашим проектом энергетической инфраструктуры</p>
+        </div>
+
+        <div class="contacts-grid">
+            <div class="reveal">
+                <div class="form-card">
+                    <h3>Оставьте заявку</h3>
+
+                    <form id="contactForm">
+                        <!-- ↓ Вставьте сюда свой ключ с web3forms.com -->
+                        <input type="hidden" name="access_key" value="8afec329-027a-4ae5-9702-0fc2ce18d29f">
+                        <input type="hidden" name="subject" value="Новая заявка с сайта Байкалэлектро">
+                        <input type="hidden" name="from_name" value="Байкалэлектро — Сайт">
+                        <div class="form-group">
+                            <label>Ваше имя *</label>
+                            <input type="text" name="name" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон *</label>
+                            <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Сообщение *</label>
+                            <textarea name="message" placeholder="Расскажите о вашем проекте..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full" id="submitBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                            <span id="submitBtnText">Отправить заявку</span>
+                        </button>
+                        <div id="formError" class="form-error"></div>
+                        <p class="form-privacy">
+                            Нажимая кнопку, вы согласны с <a href="#">политикой конфиденциальности</a>
+                        </p>
+                    </form>
+
+                    <div class="contact-info" id="contact-info">
+                        <h4>Контактная информация</h4>
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <div>
+                                    <div class="contact-info-item-title">Адрес</div>
+                                    <div class="contact-info-item-text">г. Иркутск, ул. Трилиссера, д. 87<br>4 этаж, офис 405</div>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                                <div>
+                                    <div class="contact-info-item-title">Телефон</div>
+                                    <div class="contact-info-item-text">+7 (3952) 505-333</div>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <div>
+                                    <div class="contact-info-item-title">Email</div>
+                                    <div class="contact-info-item-text">office@bkro.ru</div>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <div>
+                                    <div class="contact-info-item-title">Часы работы</div>
+                                    <div class="contact-info-item-text">Пн-Пт: 09:00 - 18:00<br>Сб-Вс: По договоренности</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="map-card">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=104.316542%2C52.274999&z=16&pt=104.316542%2C52.274999%2Cpm2blm"
+                        title="Карта — Байкалэлектро">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">
+                    <img src="icon.ico" alt="Байкалэлектро">
+                    <span class="gradient-text">Байкалэлектро</span>
+                </div>
+                <p>Профессиональное проектирование энергетических объектов с 2008 года</p>
+            </div>
+            <div class="footer-col">
+                <h4>Быстрые ссылки</h4>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#licenses">Лицензии</a></li>
+                    <li><a href="#contact-info">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Правовая информация</h4>
+                <ul>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Условия использования</a></li>
+                    <li><a href="#">Согласие на обработку данных</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 ООО "Байкалэлектро". Все права защищены.</p>
+            <p>г. Иркутск | ул. Трилиссера, д. 87 | office@bkro.ru</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ===== LICENSE MODAL ===== -->
+<div id="licenseModal" class="modal" onclick="closeLicenseModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeLicenseModal()">&#x2715;</button>
+        <div id="licenseModalBody"></div>
+    </div>
+</div>
+
+<!-- ===== SUCCESS MODAL ===== -->
+<div id="successModal" class="modal" onclick="closeSuccessModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeSuccessModal()">&#x2715;</button>
+        <div class="success-inner">
+            <svg class="success-icon" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <h2 class="gradient-text">Спасибо!</h2>
+            <p>Ваша заявка успешно отправлена.<br>Мы свяжемся с вами в ближайшее время.</p>
+            <button onclick="closeSuccessModal()" class="btn-primary">Закрыть</button>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PORTFOLIO LIGHTBOX ===== -->
+<div id="portfolioLightbox" class="plightbox">
+    <div class="plightbox-backdrop" id="plightboxBackdrop"></div>
+    <button class="plightbox-close" id="plightboxCloseBtn" aria-label="Закрыть">&#x2715;</button>
+    <button class="plightbox-nav plightbox-prev" id="plightboxPrevBtn" aria-label="Предыдущее фото">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="plightbox-nav plightbox-next" id="plightboxNextBtn" aria-label="Следующее фото">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="plightbox-inner">
+        <img id="plightboxImg" src="" alt="" class="plightbox-img">
+        <div class="plightbox-info">
+            <span id="plightboxTitle" class="plightbox-title"></span>
+            <span id="plightboxCounter" class="plightbox-counter"></span>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PROJECTS LIGHTBOX ===== -->
+<div id="projectsLightbox" class="plightbox">
+    <div class="plightbox-backdrop" id="projBackdrop"></div>
+    <button class="plightbox-close" id="projCloseBtn" aria-label="Закрыть">&#x2715;</button>
+    <button class="plightbox-nav plightbox-prev" id="projPrevBtn" aria-label="Предыдущее фото">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="plightbox-nav plightbox-next" id="projNextBtn" aria-label="Следующее фото">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="plightbox-inner">
+        <img id="projLightboxImg" src="" alt="" class="plightbox-img">
+        <div class="plightbox-info">
+            <span id="projLightboxTitle" class="plightbox-title"></span>
+            <span id="projLightboxCounter" class="plightbox-counter"></span>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
